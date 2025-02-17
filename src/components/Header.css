@@ -1,0 +1,46 @@
+/* Basic Top Navigation */
+.header{ 
+    display: flex;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
+    width: 100%; /* Ensure the nav takes full width of the page */
+    align-items: center;
+
+}
+
+.logoSite{
+    margin-left: 20px;
+}
+
+nav {
+  
+    text-align: center;
+    position: relative; /* This will place it at the top without fixed positioning */
+ 
+  }
+  
+  nav ol {
+   
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+  }
+  
+  nav ol li {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ddd;
+  }
+  

@@ -1,0 +1,11 @@
+.hello{
+    color: white;
+}
+
+main {
+    padding: 10px; /* Reduces padding inside main */
+    margin-left: 100px;
+    margin-right: 500px;
+    margin-top: 100px;
+  }
+  
