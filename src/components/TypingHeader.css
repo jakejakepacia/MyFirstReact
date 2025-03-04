@@ -1,0 +1,16 @@
+.typing-effect-js {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .typing-effect-js::after {
+    content: '|';
+    position: absolute;
+    right: -5px;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { opacity: 0 }
+    50% { opacity: 1 }
+  }

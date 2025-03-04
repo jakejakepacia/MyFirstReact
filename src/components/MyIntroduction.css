@@ -6,6 +6,12 @@ main {
     padding: 10px; /* Reduces padding inside main */
     margin-left: 100px;
     margin-right: 500px;
-    margin-top: 100px;
+    margin-top: 200px;
+    height: 100vh;
+    position: relative;
   }
   
+  main > * {
+    margin-bottom: 10px; /* Adds space below each element inside <main> */
+  }
+

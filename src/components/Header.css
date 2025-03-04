@@ -6,7 +6,10 @@
     justify-content: space-between;
     width: 100%; /* Ensure the nav takes full width of the page */
     align-items: center;
-
+    height: 100px;
+    position: fixed;
+    top:  0;
+    z-index: 1000;
 }
 
 .logoSite{
@@ -20,7 +23,7 @@ nav {
  
   }
   
-  nav ol {
+  nav ul {
    
     margin: 0;
     padding: 0;
@@ -28,15 +31,17 @@ nav {
     justify-content: center; /* Centers the nav items horizontally */
   }
   
-  nav ol li {
+  nav ul li {
     margin-right: 20px;
     margin-left: 20px;
     color: white;
     text-align: center;
+    list-style: none;
+    cursor: pointer;
   }
   
   nav a {
-    color: white;
+    color: blac;
     text-decoration: none;
   }
   
