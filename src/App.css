@@ -1,51 +1,78 @@
-/* Basic Top Navigation */
-.header{ 
-    display: flex;
-    background-color: #333;
-    color: white;
-    justify-content: space-between;
-    width: 100%; /* Ensure the nav takes full width of the page */
-    align-items: center;
-    height: 100px;
-    position: fixed;
-    top:  0;
-    z-index: 1000;
+.header{
+  display: flex;
+  background-color: #1d2d44;
+  color: white;
+  justify-content: space-between;
+  width: 100%; /* Ensure the nav takes full width of the page */
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top:  0;
+  z-index: 1000;
+
 }
 
-.logoSite{
-    margin-left: 20px;
+/* Basic styles for the menu */
+ul.menu {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Default to horizontal layout */
+  justify-content: space-around; /* Space out menu items */
+  background-color: #1d2d44;
 }
 
-nav {
-  
-    text-align: center;
-    position: relative; /* This will place it at the top without fixed positioning */
- 
+ul.menu li {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none; /* Hide toggle button on desktop */
+  background-color: #1d2d44;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+/* Mobile styling: hide the menu by default */
+@media (max-width: 768px) {
+  ul.menu {
+    display: none; /* Hide menu by default on small screens */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    background-color: #1d2d44;
+    margin-top: auto;
   }
-  
-  nav ul {
-   
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centers the nav items horizontally */
+
+  ul.menu.open {
+    display: flex; /* Show menu when the 'open' class is added */
   }
-  
-  nav ul li {
-    margin-right: 20px;
-    margin-left: 20px;
-    color: white;
+
+  ul.menu li {
     text-align: center;
-    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid #444;
     cursor: pointer;
   }
-  
-  nav a {
-    color: blac;
-    text-decoration: none;
+
+  .menu-toggle {
+    display: block; /* Show toggle button on mobile */
   }
-  
-  nav a:hover {
-    color: #ddd;
-  }
-  
+}
+.headerNav{
+  display: flex;
+  background-color: #1d2d44;
+  color: white;
+  justify-content: space-between;
+  width: 100%; /* Ensure the nav takes full width of the page */
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top:  0;
+  z-index: 1000;
+}

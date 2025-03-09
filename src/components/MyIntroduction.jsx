@@ -36,18 +36,22 @@ export default function MyIntroduction() {
 
     return(
         <>
-        <main >
-       <p>Hi, my name is</p> 
-        <h1 className="typing-effect-js">{displayedText}</h1>
-        <h1 className="hello">I build things for Mobile App</h1>
-        <p>I am an enthusiastic iOS Developer with hands-on 
-        experience in building and deploying iOS applications
-        using Swift and UIKit. I am currently working on an iOS application for my team and integrating API calls to connect with backend services developed by our web developers. Throughout my journey, I have developed a strong foundation in mobile app development and am actively implementing 
-         industry-standard design patterns like MVVM to ensure code maintainability, scalability, and testability.</p>
-        <p>
-            Well, I love to learn and study new technology so I will not limit my self in Mobile development only. Here I am, exploring web development and guest what? This is my first ever website! I hope you like it! :)
-        </p>
-        </main>
+      <section className="introductionSection">
+        <div className="content">
+        <p>Hi, my name is</p> 
+         <h1 className="typing-effect-js">{displayedText}</h1>
+         <h1 className="hello">I build things for Mobile App</h1>
+         <p>Hi, I'm a mobile app developer with experience building apps for both iOS and Android. I’ve worked with Xamarin and C# to create cross-platform apps, and I really enjoy how these tools let me deliver smooth, seamless experiences across multiple devices. On the iOS side, I’ve spent a lot of time with Swift and UIKit, building native apps that are both user-friendly and high-performance.
+Alongside mobile development, I’m also passionate about web development. My journey into web development is something I’m excited about, and this portfolio website is actually my first project built with React.js. It’s been a great way to dive deeper into front-end technologies and broaden my skill set.</p>
+<p>I also have a solid background in using .NET for backend services, ensuring my apps are backed by scalable, reliable systems.</p> 
+<p>I’m always looking for ways to improve my work, whether it's through new tools, technologies, or ways to better integrate mobile and web experiences.
+I’m driven by solving problems and creating intuitive, engaging experiences—whether on mobile or the web.</p>
+
+
+        </div>
+     
+
+        </section>
         
         </>
     )

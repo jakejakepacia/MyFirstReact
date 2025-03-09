@@ -1,7 +1,7 @@
 /* Basic Top Navigation */
 .header{ 
     display: flex;
-    background-color: #333;
+    background-color: #1d2d44;
     color: white;
     justify-content: space-between;
     width: 100%; /* Ensure the nav takes full width of the page */
